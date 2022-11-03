@@ -15,14 +15,14 @@ const Home = () => {
         </div>
         <div className="video-content">
           <div className='flex row'> 
-            <div className='flex flex-col mt-[35vh] ml-[20vw] '>
-              <h1 className ="font-bold text-[2.5rem] ">Hello it's Me!</h1>
-              <h1 className='font-bold text-7xl text-purple-400'>Louis Win</h1>
-              <h2 className='font-semibold text-3xl my-2'>Web Developer</h2>
-              <h3 className="font-normal text-xl w-[50%]">High level experience in web design and development knowledge, producing quality work.</h3>
+            <div className='flex flex-col mt-[35vh] ml-[20vw]'>
+              <h1 className ="font-bold text-[2.5rem] lg:text-[5rem] ">Hi it's Me!</h1>
+              <h1 className='font-bold text-7xl text-purple-400 lg:text-8xl'>Louis Win</h1>
+              <h2 className='font-semibold text-3xl my-2 lg:text-5xl'>Web Developer</h2>
+              <h3 className="font-normal text-xl w-[50%] lg:text-2xl">High level experience in web design and development knowledge, producing quality work.</h3>
             </div>
             <div>
-              <img src={LouisImg} alt="louis" className='h-[5rem] w-[5rem]' />
+              <img src={LouisImg} alt="louis" className='h-[90%] fixed bottom-[0px] left-[50%]' />
             </div>
           </div>
          
