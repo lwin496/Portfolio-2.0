@@ -1,14 +1,16 @@
 import React from 'react'
 // import {HiMenu} from 'react-icons/hi'
-import {bubble as Menu } from 'react-burger-menu'
+import {scaleRotate as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
-
+const Navbar = (...props) => {
+    
   return (
     <div>
-      <Menu width={'15%'} className='text-white text-4xl'> 
-            
+      <Menu width={'15%'} 
+      {...props}
+      className='text-white text-4xl'
+      > 
                   <a id='home' className='menu-item'> 
                         <NavLink to='/'> 
                               Home
@@ -29,7 +31,6 @@ const Navbar = () => {
                               Contact
                         </NavLink>
                   </a>
-           
       </Menu>
     </div>
   )
