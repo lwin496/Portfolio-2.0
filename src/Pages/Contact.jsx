@@ -15,23 +15,27 @@ const Contact = () => {
             </div>
             
             <div className='w-[100%]'>
-              <h1 className=' text-6xl mt-[15%] mb-0'>Contact Me</h1>
-              <form action="" className='mt-[5%] flex flex-col w-[85%]'>
-                <div className='flex justify-evenly w-[85%]'>
-                  <h3>First Name</h3>
-                  <h3>Last Name</h3>
+              <h1 className=' text-6xl mt-[15%] mb-0 font-semibold'>Contact Me</h1>
+              <form action="" className='mt-[5%] flex flex-col'>
+                <div className='flex justify-around mr-[10%]'>
+                  <div className='flex flex-col w-[45%]'>
+                      <h3>First Name</h3>
+                      <input type="text" placeholder='First Name' className='py-1' />
+                  </div>
+                  <div className='flex flex-col w-[45%]'>
+                      <h3>Last Name</h3>
+                      <input type="text" placeholder='Last Name'  className='py-1' />
+                  </div>
                 </div>
-                <div className='flex justify-between w-[85%]'>
-                  <input type="text" className='mx-1' />
-                  <input type="text" />
-                </div>
+        
                 <div className='flex flex-col'>
                   <h3>Email</h3>
-                  <input type="email" name="" id="" className='w-[50%]' />
+                  <input type="email" name="" id="" className='mr-[10%] py-1' placeholder='Email' />
                   <h3>Message</h3>
-                  <textarea name="" id="" cols="30" rows="10" className='w-[85%]'></textarea>
+                  <textarea name="" id="" cols="30" rows="10" className='mr-[10%]'></textarea>
+                  <input type="submit" value=" submit" className=' bg-[#FFA500] mr-[10%] py-2 justify-center mt-5' placeholder='Send me a Message!' />
                 </div>
-                <input type="submit" value=" submit" />
+                
               </form>
 
             </div>

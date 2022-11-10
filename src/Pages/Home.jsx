@@ -22,7 +22,7 @@ const Home = () => {
               <h3 className="font-normal text-xl w-[50%] xlg:text-2xl">High level experience in web design and development knowledge, producing quality work.</h3>
             </div>
             <div>
-              <img src={LouisImg} alt="louis" className='h-[90%] fixed bottom-[0px] left-[50%]' />
+              <img src={LouisImg} alt="louis" className='h-[50%] fixed bottom-[0px] left-[50%] lg:h-[90%]' />
             </div>
           </div>
          
