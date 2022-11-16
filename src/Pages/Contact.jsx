@@ -33,7 +33,7 @@ const Contact = () => {
                   <h3>Email</h3>
                   <input type="email" name="" id="" className='mr-[10%] py-1' placeholder='Email' />
                   <h3>Message</h3>
-                  <textarea name="" id="" cols="30" rows="10" className='mr-[10%]'></textarea>
+                  <textarea name="" id="" cols="30" rows="10" className='mr-[10%] resize-none'></textarea>
                   <input type="submit" value=" submit" className=' bg-[#FFA500] mr-[10%] py-2 justify-center mt-5' placeholder='Send me a Message!' />
                 </div>
                 

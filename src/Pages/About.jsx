@@ -7,7 +7,7 @@ const About = () => {
   <>
     <div className='outer-container'>
       <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
-      <section className='page-wrap bg-[#301934] h-[100vh] ' style={{backgroundImage:`url('https://wallpapercave.com/wp/wp8164660.jpg')` }}>
+      <section className='page-wrap bg-[#301934] h-[100vh]  bg-no-repeat bg-cover' style={{backgroundImage:`url('https://wallpapercave.com/wp/wp8164660.jpg')` }}>
             <div className='flex text-white flex-col'>
                 <h1 className='text-5xl m-auto mt-[10vh] mb-[3rem] font-bold'>ABOUT <span className='text-purple-400'>ME</span></h1>
                 <h3 className='m-auto mb-[1rem] w-[50%] font-semibold'>
