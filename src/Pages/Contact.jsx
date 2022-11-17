@@ -16,23 +16,23 @@ const Contact = () => {
             </div>
             
             <div className='w-[100%]'>
-              <h1 className=' text-6xl mt-[15%] mb-0 font-semibold'>Contact Me</h1>
+              <h1 className=' text-6xl mt-[15%] mb-0 font-bold text-purple-900'>Contact Me!</h1>
               <form action="" className='mt-[5%] flex flex-col'>
-                <div className='flex justify-around mr-[10%]'>
+                <div className='flex justify-between mr-[10%]'>
                   <div className='flex flex-col w-[45%]'>
-                      <h3>First Name</h3>
+                      <h3 className='text-2xl'>First Name</h3>
                       <input type="text" placeholder='First Name' className='py-1' />
                   </div>
                   <div className='flex flex-col w-[45%]'>
-                      <h3>Last Name</h3>
+                      <h3 className='text-2xl'>Last Name</h3>
                       <input type="text" placeholder='Last Name'  className='py-1' />
                   </div>
                 </div>
         
                 <div className='flex flex-col'>
-                  <h3>Email</h3>
+                  <h3 className='text-2xl'>Email</h3>
                   <input type="email" name="" id="" className='mr-[10%] py-1' placeholder='Email' />
-                  <h3>Message</h3>
+                  <h3 className='text-2xl '>Message</h3>
                   <textarea name="" id="" cols="30" rows="10" className='mr-[10%] resize-none'></textarea>
                   <input type="submit" value=" submit" className=' bg-[#FFA500] mr-[10%] py-2 justify-center mt-5' placeholder='Send me a Message!' />
                 </div>
