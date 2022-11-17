@@ -7,21 +7,20 @@ const Gallery = () => {
       <div className='outer-container'>
         <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
         <section className='page-wrap bg-[#301934] h-[100%]'>
-          <h1 className='text-white text-center font-bold text-5xl pt-[5%]'>MY PROJECTS</h1>
+          <h1 className='text-white text-center font-bold text-8xl pt-[5%]'>MY PROJECTS</h1>
+          <div className='bg-white h-[.5rem] w-[50%] m-auto'></div>
           <div className='flex justify-center align-middle text-white'>
               {/* <h1>Gallery</h1> */}
               <ul>
                 {Projects.map((project) => { 
                   return ( 
-                    <li key={project.id} className=''>
-                      
-                      <img src={project.image} alt={project.title} className='h-[80vh] w-[80vw] relative my-[5rem] shadow-2xl bg-fixed shadow-blue-300/100 bg-black  md:h-[30%]w-[30%]'/>
-                      <div >
+                    <li key={project.id} className='my-[5rem] w-[90%] m-auto'>
 
-                      </div>
-                      <div className='text-center mt-[] text-white z-30'>
-                        <h3 className='font-bold text-5xl'>{project.title}</h3>
-                        <h3 className='font-semibold text-xl'>{project.description}</h3>
+                      <div className='relative bg-gray-800 '>
+                        <img src={project.image} alt={project.title} className='opacity-[40%]' />
+                        <h3 className='absolute text-7xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>{project.title}</h3>
+                        <h3 className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[5rem] text-center'>{project.description}</h3>
+                        <a href={project.link} className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[10rem] bg-purple-800 p-2 font-semibold'>Go to Page</a>
                       </div>
                     </li>
                   )

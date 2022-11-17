@@ -4,19 +4,22 @@ const Projects = [
             title: 'Recipe React App', 
             description: 'A recipe react app that I used with the spoonacular API has a functional search bar and every recipe is interactable.', 
             image: 'https://res.cloudinary.com/duc4ngc5i/image/upload/v1668633291/Portfolio%202.0%20/RecipeAppSS_j7i1mb.png', 
+            link: 'https://louisrecipereactapp.netlify.app/'
       }, 
      
       {      
             id : '2',
-            title: 'test project 2', 
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, molestias.', 
+            title: 'Tours Website', 
+            description: 'A Tours website made with react. Simple and clean design with functional delete button and read more button.', 
             image: 'https://res.cloudinary.com/duc4ngc5i/image/upload/v1668634068/Portfolio%202.0%20/toursWebsiteSS_g5lh8g.png',
+            link: 'https://toursreactapplouiswin.netlify.app/     '
       },
       {     
             id : '3',
-            title: 'test project 2', 
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, molestias.', 
+            title: '2021 Capstone', 
+            description: 'A website for a fake business called ReelVisonFilms. Designed by me and a partner.', 
             image: 'https://res.cloudinary.com/duc4ngc5i/image/upload/v1668634516/Portfolio%202.0%20/reelVisonFilmsSS_nphbgc.png',
+            link: 'https://lwin496.github.io/Capstone-Project/'
       },
       // {           
       //       id : '4',
