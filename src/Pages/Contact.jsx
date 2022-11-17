@@ -7,21 +7,16 @@ import emailjs from '@emailjs/browser'
 // const env = require('dotenv')
 
 const Contact = () => {
-  console.log( process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, process.env.REACT_APP_PUBLIC_KEY)
   
-  const serviceID = process.env.REACT_APP_SERICE_ID
-  const templateID = process.env.REACT_APP_TEMPLATE_ID 
-  const publicKEY = process.env.REACT_APP_PUBLIC_KEY
-
   const form = useRef()
 
   const handleOnSubmitSendEmail = (e) => { 
     e.preventDefault()
 
-    emailjs.sendForm(serviceID,
-      templateID,
+    emailjs.sendForm('service_p4k60x8',
+      'template_fiip0pl',
       form.current,
-      publicKEY,
+      'tUI_jFwWHFBORGwsH',
       ).then((result) => { 
         console.log(result.text)
         console.log("message sent")
@@ -64,7 +59,7 @@ const Contact = () => {
                   <input type="email" name="user_email" className='mr-[10%] py-1' placeholder='Email' required />
                   <h3 className='text-2xl '>Message</h3>
                   <textarea name="message" id="" cols="30" rows="10" className='mr-[10%] resize-none ' required></textarea>
-                  <input type="submit" value="Send" className=' bg-[#FFA500] mr-[10%] py-2 justify-center mt-5' />
+                  <input type="submit" value="Send" className=' bg-green-500 mr-[10%] py-2 justify-center mt-5 hover:bg-green-600' />
                 </div>
                 
               </form>
