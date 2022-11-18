@@ -107,3 +107,17 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.planet{ 
+  animation: animate 1s infinite ease-in-out; 
+}
+
+@keyframes animate{ 
+  50%{ 
+    transform: translateX(-10px);
+  }
+  100%{ 
+    transform: translateX(10px);
+  }
+
+}

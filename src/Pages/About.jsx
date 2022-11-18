@@ -21,16 +21,16 @@ const About = () => {
                 <div className='w-[55%] h-[.25rem] bg-white m-auto'></div>
                   <div className='w-[10%] h-[10%]'>
                     <a href="#" className='relative left-[55vw] top-[0vh]'>
-                      <img src={githubIcon} alt="mygithub" className='motion-safe:animate-bounce' />
+                      <img src={githubIcon} alt="mygithub" className='planet' />
                     </a>
                     <a href="#" className='relative left-[65vw] top-[10vh]'>
-                      <img src={linkedinIcon} alt="mylinkedIn" className='animate-bounce' />
+                      <img src={linkedinIcon} alt="mylinkedIn" className='planet' />
                     </a>
                     <a href="#" className='relative left-[30vw] bottom-[20vh]'>
-                      <img src={instagramIcon} alt="myInstagram" className='animate-bounce' />
+                      <img src={instagramIcon} alt="myInstagram" className='planet' />
                     </a>
                     <a href="#" className='relative left-[30vw] bottom-[10vh]'>
-                      <img src={youtubeIcon} alt="myYoutubeicon" className='animate-bounce' />
+                      <img src={youtubeIcon} alt="myYoutubeicon" className='planet' />
                     </a>
                   </div>
                 <img src={Louis} alt="louis" className='h-[60%] left-[40%] fixed bottom-[0px]' />
