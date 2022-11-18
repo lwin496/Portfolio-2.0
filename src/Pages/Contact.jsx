@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import img from '../Imgs/planet.jpg'
 
+
 const Contact = () => {
   return (
     <div className='bg-[#301934] h-screen'>
