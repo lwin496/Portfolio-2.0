@@ -1,57 +1,32 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-// // import GalleryComponent from '../Components/GalleryComponent'
-
-// const Gallery = () => {
-//   return (
-    // <>
-    //   <div className='outer-container'>
-    //     <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
-    //     <section className='page-wrap bg-[#301934] h-[100vh]'>
-    //       <div className='flex justify-center align-middle text-white'>
-    //           <h1>Gallery</h1>
-            
-    //       </div>
-    //     </section>
-    //   </div>
-    // </>
-//   )
-// }
-
-// export default Gallery
-
-
-
-
+import Projects from '../Projects'
 const Gallery = () => {
-  // console.log('images',images)
   return (
-    // <div>
-    //   <h1>GALLERY</h1>
-    //   <ul>
-    //     {images.map(image => { 
-    //       return ( 
-    //         <li key={image.id}> 
-    //           <a href={image.link}>
-    //             <div>
-    //               <img width={image.width} height={image.height} src={image.image} />
-    //               <h3>
-    //                 {image.title}
-    //               </h3>
-    //             </div>
-    //           </a>
-    //         </li>
-    //       )
-    //     })}
-    //   </ul>
-    // </div>
     <>
       <div className='outer-container'>
         <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
-        <section className='page-wrap bg-[#301934] h-[100vh]'>
+        <section className='page-wrap bg-[#301934] h-[100%]'>
+          {/* <img src="https://images.hdqwalls.com/download/moon-fox-galaxy-4k-79-2560x1440.jpg" alt="background" className='fixed z-1' /> */}
+          <h1 className='text-white text-center font-bold text-8xl py-[1%]'>MY PROJECTS</h1>
+          <div className='bg-white h-[.5rem] w-[50%] m-auto mb-[1%]'></div>
           <div className='flex justify-center align-middle text-white'>
-              <h1>Gallery</h1>
-            
+              {/* <h1>Gallery</h1> */}
+              <ul>
+                {Projects.map((project) => { 
+                  return ( 
+                    <li key={project.id} className='w-[100%] m-auto'>
+
+                      <div className='relative bg-gray-800 '>
+                        <img src={project.image} alt={project.title} className='opacity-[40%] hover:opacity-[60%]' />
+                        <h3 className='absolute text-7xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-2rem]'>{project.title}</h3>
+                        <h3 className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3rem] text-center'>{project.description}</h3>
+                        <a href={project.link} className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[8rem] bg-purple-800 p-2 font-semibold hover:bg-green-500'>Go to Page</a>
+                      </div>
+                    </li>
+                  )
+                })}
+              </ul>
           </div>
         </section>
       </div>
@@ -61,33 +36,7 @@ const Gallery = () => {
 }
 
 
-// export async function getStaticProps() { 
-//   const results = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image`,{ 
-//     headers:{
-//       Authorization:`Basic ${Buffer.from(process.env.CLOUDINARY_API_KEY + ':' + process.env.CLOUDINARY_API_SECRET).toString('base64')}`,
-//     }
-//   }).then(r => r.json())
-//   console.log('results',results)  
 
-//   const {resources} = results
-
-//   const images = resources.map(resource =>{
-//     const {width, height} = resource
-//     return { 
-//       id: resource.asset.id,
-//       title: resource.public_id, 
-//       image : resource.secure_url, 
-//       width,
-//       height
-//     }
-//   })
-
-//   return { 
-//     props:{ 
-//       images
-//     }
-//   }
-// }
 
 
 export default Gallery 

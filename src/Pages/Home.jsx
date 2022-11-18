@@ -6,7 +6,7 @@ import video from '../Imgs/video.mp4'
 const Home = () => {
   return (
     <>
-    <div className='outer-container'>
+    <div id ='outer-container'>
       <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} /> 
       <section className="relative h-screen flex  text-white " id='page-wrap'>
        

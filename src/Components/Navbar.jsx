@@ -3,14 +3,11 @@ import React from 'react'
 import {scaleRotate as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = (...props) => {
-    
+
+const Navbar = (pageWrapId, OuterContainerId) => {
   return (
     <div>
-      <Menu width={'15%'} 
-      {...props}
-      className='text-white text-4xl'
-      > 
+      <Menu width={'15%'} className='text-white text-4xl'> 
                   <a id='home' className='menu-item'> 
                         <NavLink to='/'> 
                               Home
