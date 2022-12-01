@@ -1,18 +1,81 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Louis from '../Imgs/louisaboutme.png'
-import githubIcon from '../Imgs/githubicon.png'
-import linkedinIcon from '../Imgs/linkedinicon.svg'
-import instagramIcon from '../Imgs/instagram-logo-circle.png'
-import youtubeIcon from '../Imgs/youtubeicon.png'
+import KeyboardNormal from '../Imgs/Keyboard Phone.jpg'
+// `url('https://res.cloudinary.com/duc4ngc5i/image/upload/v1669160739/Portfolio%202.0%20/orion-nebula-11107_f1zdoq.jpg
+import {FaInstagramSquare} from 'react-icons/fa'
+
+
+
 const About = () => {
 
   return (
   <>
     <div className='outer-container overflow-hidden'>
       <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
-      <section className='page-wrap bg-[#301934] h-[100vh]  bg-no-repeat bg-cover' style={{backgroundImage:`url('https://res.cloudinary.com/duc4ngc5i/image/upload/v1669160739/Portfolio%202.0%20/orion-nebula-11107_f1zdoq.jpg')` }}>
-            <div className='flex text-white flex-col'>
+      <section className='page-wrap bg-[#191919] h-[100vh]'>
+        <div className='flex flex-row'>
+          <div className='bg-[#191919] w-[35%] h-[100vh]'>
+            <img src={KeyboardNormal} alt="image of louis" className='h-[100%]' />
+          </div>
+          <div className='bg-[#301934] w-[65%] h-[100vh]  text-white'>
+            <div className='pl-[5vw] pt-[10vh]'>
+              <h1 className='font-bold text-5xl'>About Me!</h1>
+              <h1 className='font-bold text-8xl text-purple-400 mb-10'>Louis Win</h1>
+              <h3 className='font-semibold text-4xl mb-5'>Web Developer Student</h3>
+              <p className='font-normal text-xl w-[60%] tracking-wide'>Hello! I'm a web developer in training at West-Mec-Nec. I am a 2nd year student and I am currently learning backend web devleopment. We are learning the MERN stack. I have a huge interest in technology as well as other interest like Psychology and Film. I am the current Vice President of my FBLA chapter (2022-2023) and was the Treasurer last year (2021-2022). I am known to be quite energitic and personable, Thanks for reading!  </p>
+              {/* skills bars */}
+              <div className='mt-5 font-semibold text-3xl'>
+                <h1 className='pb-2'>My <span className='text-yellow-500'>Current</span> Skills</h1>
+                <h3>HTML</h3>
+                <div className="w-[20rem] bg-gray-200 rounded-full">
+                  <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '85%'}}> 85%</div>
+                </div>
+                <h3>CSS</h3>
+                <div className="w-[20rem] bg-gray-200 rounded-full">
+                  <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '80%'}}> 80%</div>
+                </div>
+                <h3>JS</h3>
+                <div className="w-[20rem] bg-gray-200 rounded-full">
+                  <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '70%'}}> 70%</div>
+                </div>
+              </div>
+              {/* social Media */}
+              <div>
+                  <a href="#">
+                   
+                  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+       
+      </section>
+    </div>
+  </>
+  )
+}
+
+export default About
+
+
+{/* 
+                  <div className='w-[10rem] h-[10rem]'>
+                    <a href="#" className=''>
+                      <img src={githubIcon} alt="mygithub" className='' />
+                    </a>
+                    <a href="#" className=''>
+                      <img src={linkedinIcon} alt="mylinkedIn" className='' />
+                    </a>
+                    <a href="#" className=''>
+                      <img src={instagramIcon} alt="myInstagram" className='' />
+                    </a>
+                    <a href="#" className=''>
+                      <img src={youtubeIcon} alt="myYoutubeicon" className='' />
+                    </a>
+                  </div>  */}
+
+
+     {/* <div className='flex text-white flex-col'>
                 <h1 className='text-7xl m-auto mt-[5vh] mb-[0rem] font-bold'>ABOUT <span className='text-purple-400'>ME</span></h1>    
                 <div className='w-[25%] h-[.5rem] bg-white m-auto'></div>  
                 <div className='flex flex-col'>
@@ -50,28 +113,4 @@ const About = () => {
             </div>
              
       
-            </div>
-      </section>
-    </div>
-  </>
-  )
-}
-
-export default About
-
-
-{/* 
-                  <div className='w-[10rem] h-[10rem]'>
-                    <a href="#" className=''>
-                      <img src={githubIcon} alt="mygithub" className='' />
-                    </a>
-                    <a href="#" className=''>
-                      <img src={linkedinIcon} alt="mylinkedIn" className='' />
-                    </a>
-                    <a href="#" className=''>
-                      <img src={instagramIcon} alt="myInstagram" className='' />
-                    </a>
-                    <a href="#" className=''>
-                      <img src={youtubeIcon} alt="myYoutubeicon" className='' />
-                    </a>
-                  </div>  */}
+            </div> */}

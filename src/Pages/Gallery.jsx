@@ -15,10 +15,10 @@ const Gallery = () => {
               <ul>
                 {Projects.map((project) => { 
                   return ( 
-                    <li key={project.id} className='w-[100%] m-auto'>
+                    <li key={project.id} className='w-[100%] mb-5  m-auto'>
 
                       <div className='relative bg-gray-800 '>
-                        <img src={project.image} alt={project.title} className='opacity-[40%] hover:opacity-[60%]' />
+                        <img src={project.image} alt={project.title} className='opacity-[40%]' />
                         <h3 className='absolute text-7xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-2rem]'>{project.title}</h3>
                         <h3 className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3rem] text-center'>{project.description}</h3>
                         <a href={project.link} className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[8rem] bg-purple-800 p-2 font-semibold hover:bg-green-500'>Go to Page</a>
