@@ -30,7 +30,7 @@ return (
                   return( 
                         <div className={index === current ? 'slide active' : 'slide'} key={slide.id}>
                               {index === current && ( 
-                              <div className='text-white'> 
+                              <div className='text-white transition'> 
                                     <img src={slide.image} alt={slide.title} className='opacity-50 h-[100vh] w-[100vw]' />
                                     <h3 className='absolute text-7xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-2rem]'>{slide.title}</h3>
                                     <h3 className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3rem] text-center'>{slide.description}</h3>
