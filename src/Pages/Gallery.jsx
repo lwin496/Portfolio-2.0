@@ -1,18 +1,36 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Projects from '../Projects'
+import ImageSlider from '../Components/ImageSlider'
+
 const Gallery = () => {
   return (
     <>
       <div className='outer-container'>
         <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
-        <section className='page-wrap bg-[#301934] h-[100%]'>
+        <section className='page-wrap bg-[#301934] h-[100vh]'>
           {/* <img src="https://images.hdqwalls.com/download/moon-fox-galaxy-4k-79-2560x1440.jpg" alt="background" className='fixed z-1' /> */}
-          <h1 className='text-white text-center font-bold text-8xl py-[1%]'>MY PROJECTS</h1>
-          <div className='bg-white h-[.5rem] w-[50%] m-auto mb-[1%]'></div>
-          <div className='flex justify-center align-middle text-white'>
-              {/* <h1>Gallery</h1> */}
-              <ul>
+          {/* <h1 className='text-white text-center font-bold text-8xl py-[1%]'>MY PROJECTS</h1> */}
+          {/* <div className='bg-white h-[.5rem] w-[50%] m-auto mb-[1%]'></div> */}
+          {/* <div className='flex justify-center align-middle text-white'> */}
+            <ImageSlider slides={Projects} />
+          {/* </div> */}
+        </section>
+      </div>
+    </>
+    
+  )
+}
+
+
+
+
+
+export default Gallery 
+
+
+    {/* <h1>Gallery</h1> */}
+              {/* <ul>
                 {Projects.map((project) => { 
                   return ( 
                     <li key={project.id} className='w-[100%] mb-5  m-auto'>
@@ -26,17 +44,4 @@ const Gallery = () => {
                     </li>
                   )
                 })}
-              </ul>
-          </div>
-        </section>
-      </div>
-    </>
-    
-  )
-}
-
-
-
-
-
-export default Gallery 
+              </ul> */}
