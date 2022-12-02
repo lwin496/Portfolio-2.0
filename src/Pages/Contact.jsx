@@ -34,32 +34,32 @@ const Contact = () => {
         <section id='page-wrap'>
         <Navbar pageWrapId={"page-wrap"} OuterContainerId={"outer-container"} />
           <div className='w-[70vw] h-[80vh] bg-zinc-200 m-auto my-[10vh] shadow-2xl shadow-blue-300/100 flex col'>
-
-            <div className='w-[100%] flex'>
-              <img src={img} alt="planet img"  className='w-[85%]'/>
+            {/* section 1 */}
+            <div className='w-[0%] flex lg:w-[40%]'>
+              <img src={img} alt="planet img"  className='w-[100%]'/>
             </div>
-            
-            <div className='w-[100%]'>
-              <h1 className=' text-6xl mt-[15%] mb-0 font-bold text-purple-900'>Contact Me!</h1>
+            {/* section 2 */}
+            <div className='w-[100%] px-[10%] h-[100%] overflow-visible lg:w-[60%]'>
+              <h1 className=' text-4xl mt-[15%] mb-0 font-bold text-purple-900 md:text-5xl'>Contact Me!</h1>
 
               <form ref={form} onSubmit={handleOnSubmitSendEmail} className='mt-[5%] flex flex-col'>
-                <div className='flex justify-between mr-[10%]'> 
-                  <div className='flex flex-col w-[45%]'>
-                      <h3 className='text-2xl'>First Name</h3>
+                <div className='flex flex-col md:flex sm:flex-row justify-between'> 
+                  <div className='flex flex-col w-[100%] sm:w-[45%]'>
+                      <h3 className='text-xl md:text-2xl'>First Name</h3>
                       <input type="text" placeholder='First Name' name='user_name' className='py-1' required />
                   </div>
-                  <div className='flex flex-col w-[45%]'>
-                      <h3 className='text-2xl'>Last Name</h3>
+                  <div className='flex flex-col w-[100%] sm:w-[45%]'>
+                      <h3 className='text-xl md:text-2xl'>Last Name</h3>
                       <input type="text" placeholder='Last Name' name='user_name'  className='py-1'  required />
                   </div>
                 </div>
         
                 <div className='flex flex-col'>
-                  <h3 className=' text-2xl'>Email</h3>
-                  <input type="email" name="user_email" className='mr-[10%] py-1' placeholder='Email' required />
-                  <h3 className='text-2xl '>Message</h3>
-                  <textarea name="message" id="" cols="30" rows="10" className='mr-[10%] resize-none ' required></textarea>
-                  <input type="submit" value="Send" className=' bg-green-500 mr-[10%] py-2 justify-center mt-5 hover:bg-green-600' />
+                  <h3 className='text-xl md:text-2xl'>Email</h3>
+                  <input type="email" name="user_email" className=' py-1' placeholder='Email' required />
+                  <h3 className='text-xl md:text-2xl'>Message</h3>
+                  <textarea name="message" id="" cols="30" rows="10" className='resize-none ' required></textarea>
+                  <input type="submit" value="Send" className=' bg-green-500 py-2 justify-center mt-5 hover:bg-green-600' />
                 </div>
                 
               </form>

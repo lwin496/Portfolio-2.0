@@ -1,13 +1,13 @@
 import React from 'react'
 // import {HiMenu} from 'react-icons/hi'
-import {scaleRotate as Menu } from 'react-burger-menu'
+import {slide as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom'
 
 
 const Navbar = (pageWrapId, OuterContainerId) => {
   return (
     <div>
-      <Menu width={'15%'} className='text-white text-4xl flex flex-col'> 
+      <Menu width={'100%'} className='text-white text-4xl flex justify-center lg:text-5xl text-center bg-[#301934] opacity-95'> 
                   <a id='home' className='menu-item pt-10 pb-2 link-underline'> 
                         <NavLink to='/'> 
                               Home
