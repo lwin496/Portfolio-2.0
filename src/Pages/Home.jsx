@@ -14,15 +14,15 @@ const Home = () => {
             <video className="min-w-full min-h-full absolute object-cover" src={video} type="video/mp4" autoPlay muted loop></video>
         </div>
         <div className="video-content">
-          <div className='flex row'> 
-            <div className='flex flex-col mt-[35vh] ml-[20vw]'>
+          <div className='flex flex-col'> 
+            <div className='flex flex-col mt-[10vh] text-center md:mt-[35vh] md:ml-[20vw] md:text-start'>
               <h1 className ="font-bold text-[2.5rem] lg:text-[5rem] ">Hi it's Me!</h1>
               <h1 className='font-bold text-7xl text-purple-400 xlg:text-8xl'>Louis Win</h1>
               <h2 className='font-semibold text-3xl my-2 '>Web Developer</h2>
-              <h3 className="font-normal text-xl w-[50%]">High level experience in web design and development knowledge, producing quality work.</h3>
+              <h3 className="font-normal text-xl md:w-[50%]">High level experience in web design and development knowledge, producing quality work.</h3>
             </div>
-            <div>
-              <img src={LouisImg} alt="louis" className='h-[50%] fixed bottom-[0px] left-[50%] lg:h-[90%]' />
+            <div className='flex justify-center items-center'>
+              <img src={LouisImg} alt="louis" className='fixed bottom-[0px] h-[60%] lg:h-[85%] md:h-[50%] md:left-[50%]' />
             </div>
           </div>
          

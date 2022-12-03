@@ -31,10 +31,10 @@ return (
                         <div className={index === current ? 'slide active' : 'slide'} key={slide.id}>
                               {index === current && ( 
                               <div className='text-white transition'> 
-                                    <img src={slide.image} alt={slide.title} className='opacity-50 h-[100vh] w-[100vw]' />
-                                    <h3 className='absolute text-7xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-2rem]'>{slide.title}</h3>
+                                    <img src={slide.image} alt={slide.title} className='opacity-50 h-[100vh] w-[100vw] md:h-[100vh] md:w-[100vw]' />
+                                    <h3 className='absolute text-4xl font-bold top-[45vh] left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-2rem] md:top-1/2 md:text-6xl'>{slide.title}</h3>
                                     <h3 className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3rem] text-center'>{slide.description}</h3>
-                                    <a href={slide.link} className='absolute text-2xl semi-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[8rem] bg-purple-800 p-2 font-semibold hover:bg-green-500'>Go to Page</a>
+                                    <a href={slide.link} className='absolute text-2xl semi-bold top-[65vh] left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[8rem] bg-purple-800 p-2 font-semibold hover:bg-green-500 md:top-1/2'>Go to Page</a>
                               </div>
                              
                               )}

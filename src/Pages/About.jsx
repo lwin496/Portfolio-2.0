@@ -8,6 +8,8 @@ import {FaInstagramSquare} from 'react-icons/fa'
 
 
 
+
+
 const About = () => {
   
   return (
@@ -24,7 +26,10 @@ const About = () => {
           <div className='video-content pt-1'>
               <div className='flex flex-col items-center'>
                 <h1 className='font-bold text-[2rem] text-white sm:text-[5rem]'>ABOUT ME</h1>
-                <button className='bg-purple-800 text-2xl p-3 text-white hover:bg-purple-900'>RESUME</button>
+                <a href="https://res.cloudinary.com/duc4ngc5i/image/upload/v1670048765/Portfolio%202.0%20/Resume_dwytdm.png" className='bg-purple-800 text-2xl p-3 text-white hover:bg-purple-900'>
+                  RESUME
+                </a>
+               
               </div>
           </div>
         </div>
@@ -86,34 +91,4 @@ const About = () => {
 }
 
 export default About
-
-          {/* <div className='w-[50%] bg-gray-100 flex justify-center items-center h-[100%]'>
-             
-            </div> */}
-{/*          
-          <div className='flex flex-col justify-center items-center m-auto bg-gray-100 h-[50vh] ' > */}
-                {/* <div className='bg-zinc-200 p-10 rounded'>
-                  <h1 className='text-center text-5xl'>Skills</h1>
-                  <div className='m-auto'>
-                    <h3>HTML</h3>
-                    <div className="w-[30rem] bg-white rounded-full my-5">
-                      <div class="bg-purple-900 text-xlg text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '85%'}}> 85%</div>
-                    </div>
-                  </div>
-
-                  <div className='m-auto'>
-                    <h3>CSS</h3>
-                    <div className="w-[30rem] bg-white rounded-full my-5">
-                      <div className="bg-purple-900 text-xlg text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '80%'}}> 80%</div>
-                    </div>
-                  </div>
-
-                  <div className='m-auto'>
-                    <h3>JS</h3>
-                    <div className="w-[30rem] bg-white rounded-full my-5">
-                      <div className="bg-purple-900 text-xlg font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '70%'}}> 70%</div>
-                    </div>
-                  </div>
-                </div>   */}
-            {/* </div>  */}
 
