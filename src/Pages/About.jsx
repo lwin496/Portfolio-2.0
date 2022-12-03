@@ -30,42 +30,52 @@ const About = () => {
         </div>
         {/* second section */}
         {/* main flex box */}
-        <div className='h-[100%] bg-[#301934] flex flex-row pt-[10vh]'>
+        <div className='h-[100%] bg-zinc-200 flex flex-col'>
           {/* first row */}
-          <div className='w-[50%] flex items-center flex-col text-white'>
-            <h3 className='text-6xl font-bold py-5'>MORE ABOUT ME</h3>
-            <img src={KeyboardNormal} alt="picture of louis" className='w-[35rem] h-[35rem] rounded ' /> 
-            <p className='font-normal text-xl w-[35rem] tracking-wide pt-10 pb-10'>Hello! I'm a web developer in training at West-Mec-Nec. I am a 2nd year student and I am currently learning backend web devleopment. We are learning the MERN stack. I have a huge interest in technology as well as other interest like Psychology and Film. I am the current Vice President of my FBLA chapter (2022-2023) and was the Treasurer last year (2021-2022). I am known to be quite energitic and personable, Thanks for reading!  </p>
+          <div className='flex flex-row w-[80vw] m-auto justify-center'>
+            {/* <img src={KeyboardNormal} alt="picture of louis" className='w-[35rem] h-[35rem] rounded ' /> 
+            <div className=''>
+              <h3>Age</h3>
+              <h3>School</h3>
+              <h3>Favorite Food</h3>
+              <h3>Hobbies</h3>
+            </div> */}
+            <div className=' bg-zinc-200 h-[70%] pb-10'>
+              <img src={KeyboardNormal} alt="picture of louis" className='w-[35rem] h-[35rem] mt-10 m-auto' /> 
+            </div>
+            <div className=' bg-zinc-200 h-[70%]'>
+              <div className='bg-gray-100 h-[35rem] w-[60rem] m-auto mt-10 px-10 pt-40'>
+               <h1 className='font-bold text-4xl pb-2'>Hello Again!</h1>
+               <h2 className='font-semibold text-3xl pb-2'>My Name is <span className='text-purple-500'>Louis Win</span></h2>
+               <p className=''>I'm a web developer in training at West-Mec-Nec. I am a 2nd year student and I am currently learning backend web devleopment. We are learning the MERN stack. I have a huge interest in technology as well as other interest like Psychology and Film. I am the current Vice President of my FBLA chapter (2022-2023) and was the Treasurer last year (2021-2022). I am known to be quite energitic and personable, Thanks for reading!  </p>
+              </div>
+            </div>
           </div>
           {/* second row */}
-          <div className='mt-5 font-semibold text-3xl w-[50%]'>
-
-            <h1 className='pb-2 text-center text-6xl text-white pb-10'>MY SKILLS</h1>
-
-            <div className='flex flex-col items-start m-auto bg-gray-100 w-[35rem] py-10' >
-
-                <div className='m-auto'>
-                  <h3>HTML</h3>
-                  <div className="w-[30rem] bg-gray-200 rounded-full my-5">
-                    <div class="bg-purple-400  text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '85%'}}> 85%</div>
-                  </div>
-                </div>
-
-                <div className='m-auto'>
-                  <h3>CSS</h3>
-                  <div className="w-[30rem] bg-gray-200 rounded-full my-5">
-                    <div className="bg-purple-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '80%'}}> 80%</div>
-                  </div>
-                </div>
-
-                <div className='m-auto'>
-                  <h3>JS</h3>
-                  <div className="w-[30rem] bg-gray-200 rounded-full my-5">
-                    <div className="bg-purple-400  text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '70%'}}> 70%</div>
-                  </div>
-                </div>
-
+          <div className='font-semibold text-3xl flex h-[50vh] w-[80vw] m-auto mb-10 bg-gray-100 flex-col justify-center items-center '>
+            <h1 className='pb-10 font-bold text-4xl '>My Social Media Links</h1>
+            <div className=''>
+              <a href="#" className='inline-flex items-center space-x-2 py-2 rounded bg-pink-500 px-4 mx-5 text-white hover:bg-pink-700'>
+                <img src="https://seeklogo.com/images/I/instagram-logo-041EABACE1-seeklogo.com.png" className='h-[3rem] w-[3rem]' alt="" />
+                <span>Instagram</span>
+              </a>
+              <a href="#" className='inline-flex items-center space-x-2 py-2 rounded bg-gray-800 px-4 mx-5 text-white hover:bg-gray-900'>
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" className='h-[3rem] w-[3rem]' alt="" />
+                <span>Github</span>
+              </a>
+              <a href="#" className='inline-flex items-center space-x-2 py-2 rounded bg-blue-400 px-4 mx-5 text-white hover:bg-blue-700'>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" className='h-[3rem] w-[3rem]' alt="" />
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" className='inline-flex items-center space-x-2 py-2 rounded bg-red-400 px-4 mx-5 text-white hover:bg-red-800'>
+                <img src="https://i0.wp.com/www.worldmissioncentre.com/wp-content/uploads/icons/youtube-icon-flat-red-play-button-logo-vector.png?ssl=1" className='h-[3rem] w-[3rem]' alt="" />
+                <span>Youtube</span>
+              </a>
             </div>
+         
+
+  
+
           </div>  
         </div>
       </section>
@@ -77,49 +87,33 @@ const About = () => {
 
 export default About
 
+          {/* <div className='w-[50%] bg-gray-100 flex justify-center items-center h-[100%]'>
+             
+            </div> */}
+{/*          
+          <div className='flex flex-col justify-center items-center m-auto bg-gray-100 h-[50vh] ' > */}
+                {/* <div className='bg-zinc-200 p-10 rounded'>
+                  <h1 className='text-center text-5xl'>Skills</h1>
+                  <div className='m-auto'>
+                    <h3>HTML</h3>
+                    <div className="w-[30rem] bg-white rounded-full my-5">
+                      <div class="bg-purple-900 text-xlg text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '85%'}}> 85%</div>
+                    </div>
+                  </div>
 
+                  <div className='m-auto'>
+                    <h3>CSS</h3>
+                    <div className="w-[30rem] bg-white rounded-full my-5">
+                      <div className="bg-purple-900 text-xlg text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '80%'}}> 80%</div>
+                    </div>
+                  </div>
 
- {/* <button onClick={() => setLightTheme(prevTheme => !prevTheme)}>Toggle Theme</button> */}
-        {/* <div className='flex flex-row'>   
-          <div className='bg-[#191919] w-[40%] h-[100%]'>
-            <img src={KeyboardNormal} alt="image of louis" className='h-[100vh]' />
-          </div>
-          <div className='bg-[#301934] w-[65%] h-[100vh]  text-white'>
-            <div className='pl-[5vw] pt-[2vh]'>
-              <h1 className='font-bold text-5xl'>About Me!</h1>
-              <h1 className='font-bold text-8xl text-purple-400 mb-10'>Louis Win</h1>
-              <h3 className='font-semibold text-4xl mb-5'>Web Developer</h3>
-              <p className='font-normal text-xl w-[60%] tracking-wide'>Hello! I'm a web developer in training at West-Mec-Nec. I am a 2nd year student and I am currently learning backend web devleopment. We are learning the MERN stack. I have a huge interest in technology as well as other interest like Psychology and Film. I am the current Vice President of my FBLA chapter (2022-2023) and was the Treasurer last year (2021-2022). I am known to be quite energitic and personable, Thanks for reading!  </p> */}
-              {/* skills bars */}
-              {/* <div className='mt-5 font-semibold text-3xl'>
-                <h1 className='pb-2'>My <span className='text-yellow-500'>Current</span> Skills</h1>
-                <h3>HTML</h3>
-                <div className="w-[20rem] bg-gray-200 rounded-full">
-                  <div class="bg-purple-400  text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '85%'}}> 85%</div>
-                </div>
-                <h3>CSS</h3>
-                <div className="w-[20rem] bg-gray-200 rounded-full">
-                  <div className="bg-purple-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '80%'}}> 80%</div>
-                </div>
-                <h3>JS</h3>
-                <div className="w-[20rem] bg-gray-200 rounded-full">
-                  <div className="bg-purple-400  text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '70%'}}> 70%</div>
-                </div>
-              </div> */}
-              {/* social Media */}
-              
-              {/* <div className='flex w-[60%] mt-5'>
-                  <a href="#">
-                   <img src="https://res.cloudinary.com/duc4ngc5i/image/upload/v1669927383/Portfolio%202.0%20/instagram_wdomlc.png" alt="instagram" className='h-[3rem] pr-4 hover:h-[3.5rem]' />
-                  </a>
-                  <a href="#">
-                   <img src="https://res.cloudinary.com/duc4ngc5i/image/upload/v1669928123/Portfolio%202.0%20/github_lclds6.png" alt="github" className='h-[3rem] px-4 hover:h-[3.5rem]' />
-                  </a>
-                  <a href="#">
-                   <img src="https://res.cloudinary.com/duc4ngc5i/image/upload/v1669928235/Portfolio%202.0%20/linkedin_ytcd3k.png" alt="linkedin" className='h-[3rem] px-4 hover:h-[3.5rem]' />
-                  </a>
-              </div> */}
-            
-          {/* </div>
-        </div> */}
-      {/* </div> */}
+                  <div className='m-auto'>
+                    <h3>JS</h3>
+                    <div className="w-[30rem] bg-white rounded-full my-5">
+                      <div className="bg-purple-900 text-xlg font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{width: '70%'}}> 70%</div>
+                    </div>
+                  </div>
+                </div>   */}
+            {/* </div>  */}
+

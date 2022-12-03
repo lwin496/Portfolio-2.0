@@ -39,7 +39,7 @@ const Contact = () => {
               <img src={img} alt="planet img"  className='w-[100%]'/>
             </div>
             {/* section 2 */}
-            <div className='w-[100%] px-[5%] h-[100%] overflow-visible lg:w-[60%] md:px-[10%]'>
+            <div className='w-[100%] px-[5%] y-auto h-[10vh] lg:w-[60%] md:px-[10%]'>
               <h1 className=' text-4xl mt-[10vh] mb-0 font-bold text-purple-900 md:text-5xl'>Contact Me!</h1>
 
               <form ref={form} onSubmit={handleOnSubmitSendEmail} className='mt-[5%] flex flex-col'>
